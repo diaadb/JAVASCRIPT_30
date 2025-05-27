@@ -28,8 +28,9 @@
     .map(result=>result.transcript)
     .join('');
 
-    const poopscript= transcript.replace(/poop|shit|poo|dump/gi, '💩')
-    p.textContent=poopscript;
+    p.textContent=transcript
+    // const poopscript= transcript.replace(/poop|shit|poo|dump/gi, '💩')
+    // p.textContent=poopscript;
 
     if(e.result[0].isFinal){
       p=document.createElement('p')
