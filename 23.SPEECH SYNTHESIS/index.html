@@ -49,12 +49,13 @@
     .join('')
   }
 
-
-
-
+  function setVoice(){
+    console.log('changing voices')
+  }
 
 
   speechSynthesis.addEventListener('voiceschanged',populateVoices);
+  voicesDropdown.addEventListener('change',setVoice )
 </script> 
 
 </body>
